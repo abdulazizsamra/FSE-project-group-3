@@ -31,7 +31,6 @@ public:
     }
     void dfs() {
         std::vector<bool> visited(n, false);
-        std::vector<int> parent(n, 0);
         dfs_internal(visited, head);
     }
 };
