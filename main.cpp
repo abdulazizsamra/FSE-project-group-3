@@ -13,7 +13,7 @@ int main() {
         {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
-            std::cout << "Vertices and edges are integer numbers"<<std::endl;
+            std::cout << "Vertices and edges are integer numbers."<<std::endl;
             std::cout << "Enter the number of vertices and edges: ";
             std::cin >> n >> m;
         } else if (n < 1 || m < 0) {
@@ -43,6 +43,37 @@ int main() {
     for (int i = 0; i < m; ++i) {
         int parent, child;
         std::cin >> parent >> child;
+        while(true)
+        {
+            if(std::cin.fail())
+            {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+                std::cout << "Vertices must be integer numbers"<<std::endl;
+                std::cout << "Reenter parent_node child_node: ";
+                std::cin >> parent >> child;
+            } else if (parent < 0 || child < 0) {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+                std::cout << "Node id can not be less than 0."<<std::endl;
+                std::cout << "Reenter parent_node child_node: ";
+                std::cin >> parent >> child;
+            } else if (parent > n - 1 || child > n - 1) {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+                std::cout << "Node id can not be more than n - 1. Where n is number of nodes in the graph."<<std::endl;
+                std::cout << "Reenter parent_node child_node: ";
+                std::cin >> parent >> child;
+            } else if (parent == child) {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+                std::cout << "A node can't be parent to itself."<<std::endl;
+                std::cout << "Reenter parent_node child_node: ";
+                std::cin >> parent >> child;
+            } else {
+                break;
+            }
+        }
         nodes[parent].children.push_back(&nodes[child]);
     }
     DFS algo(n, nodes);
