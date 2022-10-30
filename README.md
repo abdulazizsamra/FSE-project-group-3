@@ -8,9 +8,9 @@ some text here
 some text here
 
 ## Docker
-Run this:
+Run this from repo directory:
 ```shell
-docker build -t test -f FSE-project-group-3/Dockerfile .
+docker build -t test -f Dockerfile .
 ```
 
 ## Testing
