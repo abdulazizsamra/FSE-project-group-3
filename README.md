@@ -78,7 +78,7 @@ For each testcase, there is a reference file that is compared with the output to
 ## 🛠️ Editing the project: workflow manager
 After editing any file, run the workflow manager.
 
-The workflow manager will
+The workflow manager will:
 - Read checkout the full repository
 - Use the provided Dockerfile to build an image
 - Run the image
