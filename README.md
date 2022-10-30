@@ -76,7 +76,8 @@ bash scripts/test.sh
 For each testcase, there is a reference file that is compared with the output to check the validity of code.
 
 ## 🛠️ Editing the project: workflow manager
-After editing any file, run the workflow manager
+After editing any file, run the workflow manager.
+
 The workflow manager will
 - Read checkout the full repository
 - Use the provided Dockerfile to build an image
