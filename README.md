@@ -61,7 +61,7 @@ It will make an executable named ``depth_first_search_executable`` in this direc
 
 6. Run the test
 ```
- scripts/test.sh
+bash scripts/test.sh
 ```
 
 
