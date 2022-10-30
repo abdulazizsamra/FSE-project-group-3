@@ -12,6 +12,14 @@ Run this:
 ```shell
 docker build -t test -f FSE-project-group-3/Dockerfile .
 ```
+Wait for it, then run:
+```shell
+docker run -it test
+```
+And now you have all FSE-project-group-3 folder in your /root directory, so you can work with you binaries.
+```shell
+cd /root/FSE-project-group-3/
+```
 
 ## Testing
 #### by: Abdulaziz Samra
