@@ -1,1 +1,30 @@
-
+name: MainAction
+on:
+    push
+jobs:
+    job1:
+        name: the only job
+        runs-on: ubuntu-latest
+        steps:
+            -
+                name: Checkout current repo
+                uses: actions/checkout@v3
+            -
+                name: Use the provided Dockerfile to build an image
+                run: docker build -t test -f Dockerfile .
+            -
+                name: Run the image
+                run: docker run -it test
+            -
+                name: list current dir
+                run: ls -la
+            -
+                name: build executable
+                run: bash scripts/build.sh
+            -
+                name: list current dir
+                run: ls -la
+            -
+                name: run tester
+                run: ./scripts/test.sh
+                
