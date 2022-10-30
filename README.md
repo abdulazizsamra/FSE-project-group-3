@@ -1,11 +1,26 @@
 # FSE-project-group-3
 ## Intro
-
 ## Core Algorithm
 some text here
+## 🛠️ Installation Steps: Building the Software
 
-## Building the Software
-To build the executable, go to project root directory 
+1. Clone the repository
+
+```Bash
+git clone https://github.com/abdulazizsamra/FSE-project-group-3
+```
+
+2. Build the Docker Image from the Docker file
+
+```Bash
+docker build -t project_group_3 [path_to_docker_file]
+```
+ 4 To install the libraries, go to project root directory 
+(where the ``CMakeLists.txt`` file and ``scripts`` directory are)
+and run
+```
+bash scripts/prereqs.sh
+5 To build the executable, go to project root directory 
 (where the ``CMakeLists.txt`` file and ``scripts`` directory are)
 and run
 ```
