@@ -20,6 +20,7 @@ docker build -t project_group_3 [path_to_docker_file]
 and run
 ```
 bash scripts/prereqs.sh
+```
 5 To build the executable, go to project root directory 
 (where the ``CMakeLists.txt`` file and ``scripts`` directory are)
 and run
