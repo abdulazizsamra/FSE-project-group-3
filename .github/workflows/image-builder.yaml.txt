@@ -1,0 +1,16 @@
+on:
+    push
+jobs:
+    image-builder:
+        name: Checkout prerequisites
+        runs-on: ubuntu-latest
+        steps:
+            -
+                name: Checkout current repo
+                uses: actions/checkout@v3
+            -
+                name: Use the provided Dockerfile to build an image
+                run: docker build -t my_image .
+            -
+                name: List docker images
+                run: docker images
