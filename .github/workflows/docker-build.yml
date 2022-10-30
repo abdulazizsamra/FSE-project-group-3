@@ -19,6 +19,6 @@ jobs:
     - name: Run the image
       run: docker run  --name build -d my_image 
     - name: build
-      run: docker exec -it build bash scripts/build.sh
+      run: docker exec -i build bash scripts/build.sh
 
 
