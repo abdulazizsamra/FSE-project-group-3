@@ -70,8 +70,8 @@ bash scripts/test.sh
 ## 👷 Testing
 The implemented `test_dfs.py` runs a python executable that read testcases input files from `/testcase`, feed them to ``depth_first_search_executable``, and use python unittest module to compare the computed output with the theretically expected output contained in the refernce files in the same directory. 
 To run the tester, go to project root directory and run:
-```shell
-./scripts/test.sh
+```
+bash scripts/test.sh
 ```
 For each testcase, there is a reference file that is compared with the output to check the validity of code.
 
