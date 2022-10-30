@@ -22,10 +22,7 @@ Wait for it, then run:
 ```shell
 docker run -it test
 ```
-And now you have all FSE-project-group-3 folder in your /root directory, so you can work with you binaries.
-```shell
-cd /root/FSE-project-group-3/
-```
+And now you have all FSE-project-group-3 folder in your /root directory, so you can work with you binaries. 
 
 ## Testing
 The implemented `test_dfs.py` runs an executable that read testcases input files from `/testcase`, feed them to ``depth_first_search_executable``, and use python unittest module to compare the output with refernce files in the same directory. 
