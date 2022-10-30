@@ -1,7 +1,18 @@
 # FSE-project-group-3
 ## Intro
-## Core Algorithm
-some text here
+## Core Algorithm: Depth First Search
+ 
+Depth first search is a tree-based graph traversal algorithm that is used to search a graph. A DFS algorithm traverses a tree or graph from the parent vertex down to its
+children and grandchildren vertices in a single path until it reaches a dead end.
+When there are no more vertices to visit in a path, the DFS algorithm will backtrack to a point where it can choose another path to take. It will repeat the process over and
+over until all vertices have been visited.
+When checking and updating each vertex, there are three things that a DFS algorithm has to do:
+- Read the current node as visited
+- Scroll through the list of children
+- For every child, check the child
+
+
+This process is repeated recursively, so when a node with no children is reached the subprocess will close and and his father process will open a subproces with the next child.
 
 ## 🦋 Prerequisite
 - [Docker](https://www.docker.com/ "Docker") Installed
