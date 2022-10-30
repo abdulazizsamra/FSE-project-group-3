@@ -33,12 +33,6 @@ This process is repeated recursively, so when a node with no children is reached
 ## 🚀  Quickstart: Building the Software
 
 
-
-.
-
-
-
-./depth_first_seach_executable
 1. Clone the repository
 
 ```Bash
