@@ -28,8 +28,9 @@ cd /root/FSE-project-group-3/
 ```
 
 ## Testing
-The implemented `tester.py` runs an executable that read input and output file path as arguments. For example:
+The implemented `test_dfs.py` runs an executable that read testcases input files from `/testcase`, feed them to ``depth_first_search_executable``, and use python unittest module to compare the output with refernce files in the same directory. 
+To run the tester, go to project root directory and run:
 ```shell
-./main.exe input.txt output.txt
+./scripts/test.sh
 ```
 For each testcase, there is a reference file that is compared with the output to check the validity of code.
