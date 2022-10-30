@@ -5,7 +5,13 @@
 some text here
 
 ## Building the Software
-some text here
+To build the executable, go to project root directory 
+(where the ``CMakeLists.txt`` file and ``scripts`` directory are)
+and run
+```
+bash scripts/build.sh
+```
+It will make an executable named ``depth_first_search_executable`` in this directory.
 
 ## Docker
 Run this:
