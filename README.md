@@ -28,7 +28,6 @@ cd /root/FSE-project-group-3/
 ```
 
 ## Testing
-#### by: Abdulaziz Samra
 The implemented `tester.py` runs an executable that read input and output file path as arguments. For example:
 ```shell
 ./main.exe input.txt output.txt
