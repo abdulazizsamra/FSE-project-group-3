@@ -57,6 +57,10 @@ bash scripts/build.sh
 ```
 It will make an executable named ``depth_first_search_executable`` in this directory.
 
+5. Run the newly created executable
+```
+bash ./depth_first_search_executable
+```
 ## Docker
 Run this from repo directory:
 ```shell
