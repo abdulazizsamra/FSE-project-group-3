@@ -2,6 +2,14 @@
 ## Intro
 ## Core Algorithm
 some text here
+
+## 🦋 Prerequisite
+- [Docker](https://www.docker.com/ "Docker") Installed
+- [Python](https://www.python.org/ "Python") Installed
+
+ 
+
+- [GH](https://cli.github.com/ "Github CLI") Installed
 ## 🛠️ Installation Steps: Building the Software
 
 1. Clone the repository
