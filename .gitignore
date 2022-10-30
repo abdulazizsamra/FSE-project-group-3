@@ -1,3 +1,5 @@
 sample_executable/
 *.exe
 
+depth_first_search_executable
+tester/__pycache__
