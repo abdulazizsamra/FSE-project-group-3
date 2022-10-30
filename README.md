@@ -71,7 +71,7 @@ Wait for it, then run:
 docker run -it test
 ```
 This now you have all FSE-project-group-3 folder in your /root directory, and Cmake actually makes you the executable at the start of this docker container - No need to run anything else!
-## 🛠️ Editing the project
+
 ## 👷 Testing
 The implemented `test_dfs.py` runs a python executable that read testcases input files from `/testcase`, feed them to ``depth_first_search_executable``, and use python unittest module to compare the computed output with the theretically expected output contained in the refernce files in the same directory. 
 To run the tester, go to project root directory and run:
@@ -79,3 +79,5 @@ To run the tester, go to project root directory and run:
 ./scripts/test.sh
 ```
 For each testcase, there is a reference file that is compared with the output to check the validity of code.
+
+## 🛠️ Editing the project: workflow
