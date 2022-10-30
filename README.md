@@ -50,7 +50,7 @@ docker build -t project -f Dockerfile
 ```
 4. The project will create and launch a contained. 
 ```
-bash docker run -it project
+ docker run -it project
 ```
 It will make an executable named ``depth_first_search_executable`` in this directory.
 
@@ -61,7 +61,7 @@ It will make an executable named ``depth_first_search_executable`` in this direc
 
 6. Run the test
 ```
-bash scripts/test.sh
+ scripts/test.sh
 ```
 
 
