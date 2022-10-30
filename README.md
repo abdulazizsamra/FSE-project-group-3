@@ -1,5 +1,14 @@
 # FSE-project-group-3
 ## Intro
+ 
+- Aleksandr Odnakov
+- Marco Offidani
+- Anastasiia Prutianova
+- Abdulaziz Samra
+- Mikhail Seleznyov
+- Polina Tarantsova
+ 
+
 ## Core Algorithm: Depth First Search
  
 Depth first search is a tree-based graph traversal algorithm that is used to search a graph. A DFS algorithm traverses a tree or graph from the parent vertex down to its
