@@ -87,5 +87,5 @@ The workflow manager will
 - Use the provided Dockerfile to build an image
 - Run the image
 - Run the builder
-- Run the tester -
+- Run the tester 
               
