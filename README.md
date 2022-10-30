@@ -54,7 +54,7 @@ cd FSE-project-group-3/
 ```Bash
 docker build -t project -f Dockerfile 
 ```
-4. Build the executable
+4. The project will create an executable with CMake
 ```
 bash docker run -it project
 ```
@@ -69,16 +69,9 @@ bash ./depth_first_search_executable
 ```
 bash scripts/test.sh
 ```
-## Docker
-Run this from repo directory:
-```shell
-docker build -t test -f Dockerfile .
-```
-Wait for it, then run:
-```shell
-docker run -it test
-```
-This now you have all FSE-project-group-3 folder in your /root directory, and Cmake actually makes you the executable at the start of this docker container - No need to run anything else!
+
+
+
 
 ## 👷 Testing
 The implemented `test_dfs.py` runs a python executable that read testcases input files from `/testcase`, feed them to ``depth_first_search_executable``, and use python unittest module to compare the computed output with the theretically expected output contained in the refernce files in the same directory. 
