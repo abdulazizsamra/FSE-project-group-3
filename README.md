@@ -8,7 +8,10 @@ some text here
 some text here
 
 ## Docker
-also here
+Run this:
+```shell
+docker build -t test -f FSE-project-group-3/Dockerfile .
+```
 
 ## Testing
 #### by: Abdulaziz Samra
