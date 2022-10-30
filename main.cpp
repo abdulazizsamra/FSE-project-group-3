@@ -1,12 +1,37 @@
 #include <iostream>
 #include <vector>
+#include<limits>
 #include "src/dfs.h"
 
 int main() {
     std::cout << "Enter the number of vertices and edges: ";
     int n, m;
     std::cin >> n >> m;
-    std::cout << std::endl;
+    while(true)
+    {
+        if(std::cin.fail())
+        {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+            std::cout << "Vertices and edges are integer numbers"<<std::endl;
+            std::cout << "Enter the number of vertices and edges: ";
+            std::cin >> n >> m;
+        } else if (n < 1 || m < 0) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+            std::cout << "Number of edges must be >= 0, number of vertices must be >= 1."<<std::endl;
+            std::cout << "Enter the number of vertices and edges: ";
+            std::cin >> n >> m;
+        } else if (m > n * (n - 1) / 2){
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+            std::cout << "Number of edges can not be more than n * (n - 1) / 2. Where n is numer of vertices."<<std::endl;
+            std::cout << "Enter the number of vertices and edges: ";
+            std::cin >> n >> m;
+        } else {
+            break;
+        }
+    }
     std::cout << std::endl;
     std::cout << "Enter the graph in format parent_node child_node." << std::endl;
     std::vector<Node> nodes;
