@@ -32,34 +32,42 @@ This process is repeated recursively, so when a node with no children is reached
 - [GH](https://cli.github.com/ "Github CLI") Installed
 ## 🚀  Quickstart: Building the Software
 
+
+
+.
+
+
+
+./depth_first_seach_executable
 1. Clone the repository
 
 ```Bash
 git clone https://github.com/abdulazizsamra/FSE-project-group-3
 ```
-
-2. Build the Docker Image from the Docker file
+2. Change the directory 
 
 ```Bash
-docker build -t project_group_3 [path_to_docker_file]
+cd FSE-project-group-3/
 ```
- 3. To install the libraries, go to project root directory 
-(where the ``CMakeLists.txt`` file and ``scripts`` directory are)
-and run
+3. Build the Docker Image from the Docker file
+
+```Bash
+docker build -t project -f Dockerfile 
 ```
-bash scripts/prereqs.sh
+4. Build the executable
 ```
-4. To build the executable, go to project root directory 
-(where the ``CMakeLists.txt`` file and ``scripts`` directory are)
-and run
-```
-bash scripts/build.sh
+bash docker run -it project
 ```
 It will make an executable named ``depth_first_search_executable`` in this directory.
 
 5. Run the newly created executable
 ```
 bash ./depth_first_search_executable
+```
+
+6. Run the test
+```
+bash scripts/test.sh
 ```
 ## Docker
 Run this from repo directory:
