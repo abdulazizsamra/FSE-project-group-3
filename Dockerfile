@@ -20,4 +20,6 @@ COPY . /root/FSE-project-group-3
 
 WORKDIR /root/FSE-project-group-3
 
+ENTRYPOINT ["scripts/build.sh"]
+
 
