@@ -2,6 +2,6 @@ mkdir build
 cd build
 cmake ..
 cmake --build .
-mv FSE-project-group-3 ..
+mv depth_first_search_executable ..
 cd ..
 rm -rf build
