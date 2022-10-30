@@ -23,14 +23,22 @@ private:
         }
     }
 public:
-    Node* head;
     int n;
-    DFS(Node* head_, int n_) {
-        head = head_;
+    std::vector<Node*> nodes;
+    DFS(int n_, std::vector<Node>& nodes_) {
         n = n_;
+        for (auto& node : nodes_) {
+            nodes.push_back(&node);
+        }
     }
     void dfs() {
         std::vector<bool> visited(n, false);
-        dfs_internal(visited, head);
+        std::vector<int> parent(n, 0);
+        for (int i = 0; i < n; ++i) {
+            if (visited[i]) {
+                continue;
+            }
+            dfs_internal(visited, nodes[i]);
+        }
     }
 };
