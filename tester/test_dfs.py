@@ -9,7 +9,7 @@ class BasicTestCase(TestCase):
         f_in = open(inp_path,'r')
         result = subprocess.run(['./depth_first_search_executable'],stdin=f_in,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
         errors = result.stderr.decode().strip()
-        output = result.stdout.decode().strip().splitlines()
+        output = result.stdout.decode().strip().splitlines()[2:]
         f_in.close()
         return output, errors
 
