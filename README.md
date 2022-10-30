@@ -48,7 +48,7 @@ cd FSE-project-group-3/
 ```Bash
 docker build -t project -f Dockerfile 
 ```
-4. The project will create an executable with CMake
+4. The project will create and launch a contained. 
 ```
 bash docker run -it project
 ```
@@ -56,7 +56,7 @@ It will make an executable named ``depth_first_search_executable`` in this direc
 
 5. Run the newly created executable
 ```
-bash ./depth_first_search_executable
+ ./depth_first_search_executable
 ```
 
 6. Run the test
