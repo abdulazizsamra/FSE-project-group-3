@@ -19,6 +19,13 @@ jobs:
                 name: list current dir
                 run: ls -la
             -
+                name: run builder
+                run: ./scripts/build.sh
+            -
+                name: list current dir
+                run: ls -la
+            -
                 name: run tester
                 run: ./scripts/test.sh
+
                 
