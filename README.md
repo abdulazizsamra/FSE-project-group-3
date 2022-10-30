@@ -14,9 +14,9 @@ bash scripts/build.sh
 It will make an executable named ``depth_first_search_executable`` in this directory.
 
 ## Docker
-Run this:
+Run this from repo directory:
 ```shell
-docker build -t test -f FSE-project-group-3/Dockerfile .
+docker build -t test -f Dockerfile .
 ```
 Wait for it, then run:
 ```shell
