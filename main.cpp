@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "dfs.h"
+#include "src/dfs.h"
 
 int main() {
     std::cout << "Enter the number of vertices and edges: ";
