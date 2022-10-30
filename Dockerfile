@@ -1,4 +1,4 @@
-FROM ubuntu:20:24
+FROM ubuntu:20:04
 RUN apt-get update
 RUN apt-get isntall gcc
 RUN apt-get install cmake
