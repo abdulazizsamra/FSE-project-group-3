@@ -17,5 +17,7 @@ RUN apt install -y cmake
 
 RUN cd ~
 COPY . /root/FSE-project-group-3
+
 WORKDIR /root/FSE-project-group-3
+
 
