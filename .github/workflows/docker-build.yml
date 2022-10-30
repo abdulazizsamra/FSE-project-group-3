@@ -18,6 +18,8 @@ jobs:
       run: docker build . --file Dockerfile --tag my_image
     - name: Run the image
       run: docker run  --name build my_image
+    - name: list files in current dir
+      run: ls -la
 
 
 
